@@ -176,3 +176,66 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* BUTTONS */
+.button {
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button--outline {
+  background: #ffffff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+  transition: background 0.3s;
+}
+
+.button--outline:hover {
+  background: var(--color-headings);
+  color: #ffffff;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background: #3a8ffd;
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+
+.button--secondary:hover {
+  background: #00c8eb;
+}
+
+.button--accent {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.button--accent:hover {
+  background: #ec3000;
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
